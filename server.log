@@ -1,0 +1,23 @@
+Jan 12 10:21:04 server1 sshd[18292]: Failed password for invalid user oracle from 185.232.54.12 port 50214 ssh2
+Jan 12 10:21:05 server1 sshd[18292]: Failed password for invalid user admin from 185.232.54.12 port 50214 ssh2
+Jan 12 10:21:12 server1 sshd[18310]: Connection closed by authenticating user root 102.44.191.33 port 44218 [preauth]
+Jan 12 10:21:15 server1 sshd[18321]: Failed password for root from 102.44.191.33 port 44218 ssh2
+Jan 12 10:22:50 server1 httpd[9034]: 185.232.54.12 - - "GET /index.php?id=1 UNION SELECT username, password FROM users -- HTTP/1.1" 200 532
+Jan 12 10:22:51 server1 httpd[9035]: 102.44.191.33 - - "GET /?search=%3Cscript%3Ealert(1)%3C/script%3E HTTP/1.1" 403 128
+Jan 12 10:23:00 server1 httpd[9039]: 77.13.55.201 - - "GET /etc/passwd HTTP/1.1" 404 221
+Jan 12 10:23:15 server1 sshd[18355]: Failed password for invalid user test from 192.168.1.44 port 60312 ssh2
+Jan 12 10:23:16 server1 sshd[18355]: Failed password for invalid user test from 192.168.1.44 port 60312 ssh2
+Jan 12 10:23:17 server1 sshd[18355]: Failed password for invalid user test from 192.168.1.44 port 60312 ssh2
+Jan 12 10:23:18 server1 sshd[18355]: Failed password for invalid user test from 192.168.1.44 port 60312 ssh2
+Jan 12 10:23:19 server1 sshd[18355]: Failed password for invalid user test from 192.168.1.44 port 60312 ssh2
+Jan 12 10:23:20 server1 sshd[18355]: Failed password for invalid user test from 192.168.1.44 port 60312 ssh2
+Jan 12 10:24:11 server1 httpd[9041]: 185.232.54.12 - - "GET /login.php?user=admin&pass=admin HTTP/1.1" 401 87
+Jan 12 10:24:12 server1 httpd[9042]: 102.44.191.33 - - "GET /admin.php HTTP/1.1" 403 121
+Jan 12 10:24:20 server1 httpd[9043]: 77.13.55.201 - - "GET /?id=5%20OR%201=1 HTTP/1.1" 200 531
+Jan 12 10:24:55 server1 httpd[9044]: 123.90.44.11 - - "GET /products.php?id=../../../../etc/passwd HTTP/1.1" 404 142
+Jan 12 10:25:01 server1 systemd[1]: Started Session 51423 of user root.
+Jan 12 10:25:15 server1 sshd[18399]: Accepted password for root from 192.168.1.44 port 60312 ssh2
+Jan 12 10:25:20 server1 httpd[9050]: 185.232.54.12 - - "GET /wp-admin/install.php HTTP/1.1" 200 762
+Jan 12 10:25:35 server1 httpd[9054]: 223.10.15.90 - - "GET /index.php?id=%27%20OR%20%271%27=%271 HTTP/1.1" 200 199
+Jan 12 10:26:11 server1 httpd[9058]: 223.10.15.90 - - "POST /login.php HTTP/1.1" 403 111
+Jan 12 10:26:20 server1 httpd[9060]: 102.44.191.33 - - "GET /?q=<script>alert(123)</script> HTTP/1.1" 403 128
